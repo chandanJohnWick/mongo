@@ -3,7 +3,7 @@ mongoose.connect("mongodb://0.0.0.0:27017/ttchanell")
 .then(() => console.log('connect to mongo db'))
 .catch((err)=> console.log(err));
 
-/*const playlistSchema = new mongoose.Schema({
+const playlistSchema = new mongoose.Schema({
 name : String ,
 ctype: String,
 videos: Number,
@@ -25,4 +25,4 @@ videos: 50,
 author: "chandan",
 active: true,
 })
-reactVarma.save();*/
+reactVarma.save();
