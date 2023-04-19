@@ -4,7 +4,7 @@ mongoose.connect("mongodb://0.0.0.0:27017/ttchanell")
 .catch((err)=> console.log(err));
 
 const playlistSchema = new mongoose.Schema({
-name : String ,
+name : {type: String, required :true,minLength:5 },
 ctype: String,
 videos: Number,
 author: String,
@@ -19,9 +19,9 @@ const VarmaDemo =new mongoose.model("VarmaDemo",playlistSchema);
 //creating the documents
 
 const reactVarma = new VarmaDemo({
-    name : "react js",
+    name : "hell",
 ctype: "node",
-videos: 60,
+videos: 70,
 author: "chandan",
 active: true,
 })
