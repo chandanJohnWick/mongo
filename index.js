@@ -1,6 +1,6 @@
 const mongoose =require('mongoose');
 mongoose.connect("mongodb://0.0.0.0:27017/ttchanell")
-.then(() => console.log('connect to mongo db'))
+.then(() => console.log('connect is sussesful'))
 .catch((err)=> console.log(err));
 
 const playlistSchema = new mongoose.Schema({
